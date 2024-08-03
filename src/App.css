@@ -24,6 +24,23 @@
   color: white;
 }
 
+.glow-text {
+  font-size: 24px; /* Adjust size as needed */
+  color: #fff; /* Text color */
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+  }
+  to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 23px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+  }
+}
+
+
+
 .App-link {
   color: #61dafb;
 }
